@@ -1,0 +1,48 @@
+/*Título principal ALunos Cadastrados*/
+@font-face {
+    font-family: 'Poppins';
+    src: url(../font/Poppins-Regular.ttf);
+}
+.main-listCursos{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-items: center;
+}
+
+.main-listCursos h1{
+    
+    text-align: center;
+    font-family: 'Poppins';
+}
+/*titulos*/
+titulos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Poppins';
+    align-content: space-around;
+    font-weight: bolder;
+}
+conteudo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Poppins';
+    align-content: space-around;
+    vertical-align: middle;
+}
+titulo{
+    width: 20%;
+    text-align: center;
+
+}
+campo{
+    width: 20%;
+    text-align: center;
+    
+}

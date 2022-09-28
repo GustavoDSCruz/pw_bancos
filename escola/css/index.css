@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url(../font/Poppins-Regular.ttf);
+}
+main{
+    margin-top: 10px;
+    order: 1;
+    min-height: 100%;
+}
+.main-index{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: space-around;
+    justify-content: space-around;
+    padding-top: 50px;
+    font-family: 'Poppins';
+    
+}
+.main-index h1{
+    font-size: 36px;
+    font-weight: normal;
+}
+.main-index p{
+    font-size: 20px;
+}
+.main-index a{
+    text-decoration: none;
+    font-family: "Eras ITC";
+    font-size: 20px;
+    font-weight: bolder;    
+    color: #6466e6;
+}
+
