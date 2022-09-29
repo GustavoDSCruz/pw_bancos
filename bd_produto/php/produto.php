@@ -75,7 +75,7 @@ function alterar(){
 	{
 		$this-> conn = new Conectar();
 		$sql = $this -> conn->prepare("select * from produtos where id = ?");//informei o ? (parâmetro)
-		@$sql->bindParam(1, $this->getId(), PDO:PARAM_STR);//inclui esta linha para definir o parâmtro
+		@$sql->bindParam(1, $this->getId(), PDO::PARAM_STR);//inclui esta linha para definir o parâmtro
 		$sql->execute();
 		return $sql->fetchAll();
 		$this->conn = null;
@@ -91,9 +91,9 @@ function alterar2(){
 	{
 		$this->conn = new Conectar();
 		$sql = $this->conn->prepare("update produtos set nome = ?, estoque = ? where id = ?");
-		@$sql->bindParam(1, $this->getNome(), PDO:PARAM_STR);
-		@$sql->bindParam(2, $this->getEstoque(), PDO:PARAM_STR);
-		@$sql->bindParam(1, $this->getId(), PDO:PARAM_STR);
+		@$sql->bindParam(1, $this->getNome(), PDO::PARAM_STR);
+		@$sql->bindParam(2, $this->getEstoque(), PDO::PARAM_STR);
+		@$sql->bindParam(1, $this->getId(), PDO::PARAM_STR);
 		if($sql->execute()==1)
 		{
 			return "Registro alterado com sucesso!";

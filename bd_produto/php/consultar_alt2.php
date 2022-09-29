@@ -46,7 +46,7 @@
                     {
                 ?>
                     <input type="hidden" name="txtid" size="5" value='<?php echo $pro_mostrar[0]?>'>
-                    <b><?php echo "ID: " . $pro_mostrar[0]; //como é matriz - posição - ?>  </b>
+                    <b><?php echo "ID: " . $pro_mostrar[0]; //como é matriz - posição 0 ?>  </b>
                     <br><br><b><?php echo "Nome:";?></b>
                     <input name="txtnome" type="text" size="25" value='<?php echo $pro_mostrar[1]?>'>
                     <br><br><b><?php echo "Estoque:"; ?></b>
@@ -60,7 +60,7 @@
     </fieldset>
     <?php 
         extract($_POST, EXTR_OVERWRITE);
-        if(ifset($btnalterar))
+        if(isset($btnalterar))
         {
             include_once 'Produto.php';
             $pro = new Produto();
