@@ -61,6 +61,44 @@ function salvar()
     }
 }
 
+
+function alterar(){
+	try
+	{
+		$this-> conn = new Conectar();
+		$sql = $this -> conn->prepare("select * from disciplinas where CodDisciplina = ?");//informei o ? (parâmetro)
+		@$sql->bindParam(1, $this->getCodDisciplina(), PDO::PARAM_STR);//inclui esta linha para definir o parâmtro
+		$sql->execute();
+		return $sql->fetchAll();
+		$this->conn = null;
+	}
+	catch(PDOException $exc)
+	{
+		echo "Erro ao alterar. " . $exc->getMessage(); 
+	}
+}
+
+function alterar2(){
+	try
+	{
+		$this->conn = new Conectar();
+		$sql = $this->conn->prepare("update disciplinas set NomeDisciplina = ?, where CodDisciplina = ?");
+		@$sql->bindParam(1, $this->getNomeDisciplina(), PDO::PARAM_STR);
+		@$sql->bindParam(2, $this->getCodDisciplina(), PDO::PARAM_STR);
+
+		if($sql->execute()==1)
+		{
+			return "Registro alterado com sucesso!";
+		}
+		$this->conn = null;
+	}
+	catch(PDOException $exc)
+	{
+		echo "Erro ao salvar o registro. " . $exc->getMessage();
+	}
+}
+
+
 function exclusao()
 {
 	try
