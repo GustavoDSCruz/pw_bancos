@@ -93,7 +93,7 @@ function alterar2(){
 		$sql = $this->conn->prepare("update produtos set nome = ?, estoque = ? where id = ?");
 		@$sql->bindParam(1, $this->getNome(), PDO::PARAM_STR);
 		@$sql->bindParam(2, $this->getEstoque(), PDO::PARAM_STR);
-		@$sql->bindParam(1, $this->getId(), PDO::PARAM_STR);
+		@$sql->bindParam(3, $this->getId(), PDO::PARAM_STR);
 		if($sql->execute()==1)
 		{
 			return "Registro alterado com sucesso!";

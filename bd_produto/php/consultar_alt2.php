@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../css/main.css"> 
     <link rel="stylesheet" href="../css/navbar.css"> 
     <link rel="stylesheet" href="../css/fundo2.css"> 
-    <link rel="stylesheet" href="../css/.css"> 
+    <link rel="stylesheet" href="../css/alterar2.css"> 
     <title>Resultado das alterações</title>
 </head>
 <body>
@@ -44,15 +44,19 @@
                 <?php
                     foreach($pro_bd as $pro_mostrar)
                     {
-                ?>
-                    <input type="hidden" name="txtid" size="5" value='<?php echo $pro_mostrar[0]?>'>
-                    <b><?php echo "ID: " . $pro_mostrar[0]; //como é matriz - posição 0 ?>  </b>
-                    <br><br><b><?php echo "Nome:";?></b>
-                    <input name="txtnome" type="text" size="25" value='<?php echo $pro_mostrar[1]?>'>
+                ?>  
+                    <fieldset id="a">
+                        <input  type="hidden" name="txtid" size="5" value='<?php echo $pro_mostrar[0]?>'>
+                        <b><?php echo "ID: " . $pro_mostrar[0]; //como é matriz - posição 0 ?>  </b>
+                    </fieldset>
+                   <b><?php echo "Nome:";?></b>
+                    <input class="input-text" name="txtnome" type="text" size="25" value='<?php echo $pro_mostrar[1]?>'>
                     <br><br><b><?php echo "Estoque:"; ?></b>
-                    <input type="text" name="txtestoq" size="10" value='<?php echo $pro_mostrar[2]?>'>
+                    <input class="input-text" type="text" name="txtestoq" size="10" value='<?php echo $pro_mostrar[2]?>'>
                     <br><br><br>
-                    <input name="btnalterar" type="submit" value="Alterar">
+                    <fieldset id="b">
+                    <input class="input-submit" name="btnalterar" type="submit" value="Alterar">
+                    </fieldset>    
                 <?php        
                     }
                 ?>

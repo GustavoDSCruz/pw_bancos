@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url(../font/Poppins-Regular.ttf);
+}
+*{
+    font-family: 'Poppins';
+}
+form{
+    font-family: 'Poppins';
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    border: none;
+}
+fieldset legend{
+    text-align: center;
+}
+
+fieldset{
+    border: none;
+}
+.input-text{
+    border: none;
+    border-radius: 8px;
+    padding: 0.4vw;
+    cursor: pointer;
+}
+.input-submit{
+    border-radius: 8px;
+    border: none;
+    padding: 0.5vw;
+    font-size: 2vh;
+}
+b, legend{
+    font-size: 2.25vh;
+}
+#a{
+    display: flex;
+    justify-content: center;
+}
+#b{
+    display: flex;
+    justify-content: center;
+   
+}
