@@ -1,0 +1,134 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url(../font/Poppins-Regular.ttf);
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+#main-consultar{
+    width: 60%;
+}
+main{
+    border-radius: 12px;
+    padding: 8px;
+    width: 60%;
+}
+form{
+    font-family: 'Poppins';
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 70%;
+    border: none;
+    padding: 8px;
+    border-radius: 12px;
+    
+}
+fieldset legend{
+    text-align: center;
+    padding: 24px 0;
+}
+b{
+    font-size: 24px;  
+}
+#a{
+    border: none;
+    padding: 8px 2px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    align-content: center;
+    width: 100%;
+    
+}
+#b{
+    border: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+}
+#c{
+    border: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    width: 70%;
+}
+   
+
+titulos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    font-family: 'Poppins';
+    align-content: space-around;
+    font-weight: bolder;
+    width: 100%;
+}
+conteudo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start ;
+    font-family: 'Poppins';
+    align-content: space-around;
+    width: 100%;
+
+}
+campo{
+    width: 100% min-content ;
+    text-align: center;
+}
+#campo-cod{
+    width: 28%;
+}
+fieldset p{
+    font-family: 'Poppins';
+    padding: 8px;
+}
+p input{
+  font-family: 'Poppins';  
+  margin: 0 4px;
+  border: 1px solid #212121;
+  padding: 4px; 
+  border-radius: 8px;
+}
+
+.btn-fieldset{
+    font-family: 'Poppins';
+    background-color: #212121; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.btn-fieldset:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+/*mensagem de salvo com sucesso*/
+h3{
+    width: min-content;
+    text-align: center;
+    font-family: 'Poppins';
+}

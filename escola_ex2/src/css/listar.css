@@ -1,7 +1,21 @@
-/*Título principal ALunos Cadastrados*/
 @font-face {
     font-family: 'Poppins';
     src: url(../font/Poppins-Regular.ttf);
+}
+
+.main-listAlunos h1{
+    text-align: center;
+    font-family: 'Poppins';
+}
+.main-listDisciplinas{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-items: center;
+}
+.main-listDisciplinas h1{
+    text-align: center;
+    font-family: 'Poppins';
 }
 .main-listCursos{
     display: flex;
@@ -28,21 +42,25 @@ titulos{
 }
 conteudo{
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
     font-family: 'Poppins';
-    align-content: space-around;
-    vertical-align: middle;
+    
 }
-titulo{
+.alunos titulo, .cursos titulo{
     width: 20%;
     text-align: center;
 
 }
-campo{
+.alunos campo, .cursos campo{
     width: 20%;
     text-align: center;
-    
+}
+.disciplinas titulo{
+    width: 50%;
+    text-align: center;
+
+}
+.disciplinas campo{
+    width: 50%;
+    text-align: center;
 }
