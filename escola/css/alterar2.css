@@ -5,11 +5,11 @@
 *{
     font-family: 'Poppins';
 }
+
 form{
     font-family: 'Poppins';
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: stretch;
     border: none;
 }
@@ -21,10 +21,10 @@ fieldset{
     border: none;
 }
 .input-text{
-    border: none;
+    border: 1px solid #212121;
     border-radius: 8px;
     padding: 0.4vw;
-    cursor: pointer;
+    margin: 0 0 1.5vh 0;
 }
 .input-submit{
     border-radius: 8px;
@@ -34,6 +34,7 @@ fieldset{
 }
 b, legend{
     font-size: 2.25vh;
+    margin: 0 0 0.5vh 0;
 }
 #a{
     display: flex;

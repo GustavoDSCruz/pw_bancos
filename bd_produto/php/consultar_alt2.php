@@ -37,7 +37,7 @@
                 $txtid = $_POST["txtid"];
                 include_once 'Produto.php';
                 $p = new Produto();
-                $p->setId($txtid);
+                $p->setId($txtMatricula);
                 $pro_bd=$p->alterar(); //chamada de método com retorno - o $p é o parâmetro enviado
             ?>
             <form name="cliente2" method="POST" action="">

@@ -110,7 +110,7 @@ function alterar2(){
 		@$sql->bindParam(2, $this->getEndereco(), PDO::PARAM_STR);
 		@$sql->bindParam(3, $this->getCidade(), PDO::PARAM_STR);
 		@$sql->bindParam(4, $this->getCodcurso(), PDO::PARAM_STR);
-		@$sql->bindParam(5, $this->getId(), PDO::PARAM_STR);
+		@$sql->bindParam(5, $this->getMatricula(), PDO::PARAM_STR);
 		if($sql->execute()==1)
 		{
 			return "Registro alterado com sucesso!";

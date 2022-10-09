@@ -41,7 +41,7 @@
         <form name="cliente" method="POST" action="consultar_alt2.php">
             <fieldset id="a">
                 <legend><b>Informe o ID do aluno desejado: </b></legend>
-                <p>Id: <input name="txtid" type="text" size="20" maxlenght="5" placeholder="ID do aluno"></p>
+                <p>Id: <input name="txtMatricula" type="text" size="20" maxlenght="5" placeholder="ID do aluno"></p>
                 <br><br>
             </fieldset>
             <fieldset id="b">
