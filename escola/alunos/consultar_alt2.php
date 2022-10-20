@@ -80,6 +80,7 @@
             $pro->setEndereco($txtEnd);
             $pro->setCidade($txtCid);
             $pro->setCodcurso($txtCodcurso);
+            $pro->setMatricula($txtMatricula);
             echo "<br><br><h3>" . $pro->alterar2() . "</h3>";
             header("location:alterarAlunos.php");
         }

@@ -96,7 +96,7 @@ function alterar2(){
 		@$sql->bindParam(3, $this->getId(), PDO::PARAM_STR);
 		if($sql->execute()==1)
 		{
-			return "Registro alterado com sucesso!";
+			return  "Registro alterado com sucesso!";
 		}
 		$this->conn = null;
 	}

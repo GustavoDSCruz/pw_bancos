@@ -35,7 +35,8 @@ public function getCidade(){
 }
 public function setCidade($c_cidade){
 	return $this->cidade = $c_cidade;
-}public function getCodcurso(){
+}
+public function getCodcurso(){
 	return $this->codcurso;
 }
 public function setCodcurso($c_codcurso){
@@ -105,7 +106,7 @@ function alterar2(){
 	try
 	{
 		$this->conn = new Conectar();
-		$sql = $this->conn->prepare("update alunos set nome = ?, endereco = ?, cidade = ?, codcurso = ?, where matricula = ?");
+		$sql = $this->conn->prepare("update alunos set nome = ?, endereco = ?, cidade = ?, codcurso = ? where matricula LIKE ?");
 		@$sql->bindParam(1, $this->getNome(), PDO::PARAM_STR);
 		@$sql->bindParam(2, $this->getEndereco(), PDO::PARAM_STR);
 		@$sql->bindParam(3, $this->getCidade(), PDO::PARAM_STR);

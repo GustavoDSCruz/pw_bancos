@@ -162,6 +162,10 @@ INSERT INTO `produtos` (`id`, `nome`, `estoque`) VALUES
 (5, 'caneta', 200),
 (6, 'teste1', 200);
 
+
+
+
+
 --
 -- Índices para tabelas despejadas
 --
