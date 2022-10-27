@@ -105,7 +105,7 @@ function alterar2(){
 	try
 	{
 		$this->conn = new Conectar();
-		$sql = $this->conn->prepare("update alunos set nome = ?, coddisc1 = ?, coddisc2 = ?, coddisc3 = ? where codcurso LIKE ?");
+		$sql = $this->conn->prepare("update cursos set nome = ?, coddisc1 = ?, coddisc2 = ?, coddisc3 = ? where codcurso = ?");
 		@$sql->bindParam(1, $this->getNome(), PDO::PARAM_STR);
 		@$sql->bindParam(2, $this->getCoddisc1(), PDO::PARAM_STR);
 		@$sql->bindParam(3, $this->getCoddisc2(), PDO::PARAM_STR);

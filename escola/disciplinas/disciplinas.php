@@ -82,7 +82,7 @@ function alterar2(){
 	try
 	{
 		$this->conn = new Conectar();
-		$sql = $this->conn->prepare("update disciplinas set NomeDisciplina = ?, where CodDisciplina = ?");
+		$sql = $this->conn->prepare("update disciplinas set NomeDisciplina = ? where CodDisciplina LIKE ?");
 		@$sql->bindParam(1, $this->getNomeDisciplina(), PDO::PARAM_STR);
 		@$sql->bindParam(2, $this->getCodDisciplina(), PDO::PARAM_STR);
 
